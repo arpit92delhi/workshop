@@ -244,10 +244,14 @@ body.light-theme .main-gallery,
 body.light-theme .gallery-carousel,
 body.light-theme .value-card,
 body.light-theme .testimonial-card,
-body.light-theme .faq-item,
 body.light-theme .reach-card {
     background: #ffffff !important;
     border-color: #ddd !important;
+}
+
+body.light-theme .faq-item {
+    background: transparent !important;
+    border-bottom-color: #ddd !important;
 }
 
 body.light-theme .pricing-layout {
@@ -339,33 +343,42 @@ body.light-theme .footer {
     .logo-text { font-size: 20px; }
     .navbar-ctas { display: none; }
 
-    .main-wrapper { padding: 0 !important; }
+    .main-wrapper {
+        max-width: 100% !important;
+        width: 100% !important;
+        padding: 20px 24px !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+        overflow-x: hidden !important;
+    }
 
     .section {
         padding: 12px 0 !important;
         margin-bottom: 12px !important;
-        padding-left: 8px !important;
-        padding-right: 8px !important;
+        padding-left: 16px !important;
+        padding-right: 16px !important;
         width: 100%;
+        max-width: 100%;
         box-sizing: border-box;
+        overflow-x: hidden;
     }
     .section h2 { font-size: 18px !important; }
 
-    .hero-product-section { grid-template-columns: 1fr; gap: 12px; padding: 8px; box-sizing: border-box; width: 100%; }
-    .gallery-column { gap: 12px; }
+    .hero-product-section { grid-template-columns: 1fr; gap: 12px; padding: 12px; box-sizing: border-box; width: 100%; max-width: 100%; overflow-x: hidden; }
+    .gallery-column { gap: 12px; width: 100%; max-width: 100%; overflow-x: hidden; }
     .main-gallery { width: 100%; height: auto; max-height: 350px; border-radius: 8px; }
     .main-gallery img { width: 100%; height: auto; max-height: 350px; object-fit: cover; }
-    .thumbnails-list { gap: 8px; }
+    .thumbnails-list { gap: 8px; width: 100%; max-width: 100%; }
     .thumbnail { min-width: 60px; height: 60px; }
 
-    .info-column { gap: 12px; }
+    .info-column { gap: 12px; width: 100%; max-width: 100%; overflow-x: hidden; }
     .workshop-title { font-size: 18px; }
-    .artist-card { padding: 12px; gap: 8px; max-height: 200px; }
+    .artist-card { padding: 12px; gap: 8px; max-height: 200px; width: 100%; max-width: 100%; }
 
-    .details-row-section { grid-template-columns: 1fr; gap: 8px; padding: 8px; box-sizing: border-box; width: 100%; }
-    .detail-box { padding: 10px; min-height: auto; }
+    .details-row-section { grid-template-columns: 1fr; gap: 8px; padding: 12px; box-sizing: border-box; width: 100%; max-width: 100%; overflow-x: hidden; }
+    .detail-box { padding: 10px; min-height: auto; width: 100%; max-width: 100%; }
 
-    .pricing-layout { grid-template-columns: 1fr; gap: 12px; padding: 8px; box-sizing: border-box; width: 100%; }
+    .pricing-layout { grid-template-columns: 1fr; gap: 12px; padding: 8px; box-sizing: border-box; width: 100%; max-width: 100%; overflow-x: hidden; }
     .pricing-inclusions h3, .pricing-selector h3 { font-size: 15px; }
     .room-option { padding: 12px; }
 
@@ -401,34 +414,43 @@ body.light-theme .footer {
     .logo-author { font-size: 8px; }
     .navbar-ctas { display: none; }
 
-    .main-wrapper { padding: 0 !important; }
+    .main-wrapper {
+        max-width: 100% !important;
+        width: 100% !important;
+        padding: 20px 16px !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+        overflow-x: hidden !important;
+    }
 
     .section {
         padding: 8px 0 !important;
         margin-bottom: 8px !important;
-        padding-left: 6px !important;
-        padding-right: 6px !important;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
         width: 100%;
+        max-width: 100%;
         box-sizing: border-box;
+        overflow-x: hidden;
     }
     .section h2 { font-size: 16px !important; }
 
-    .hero-product-section { grid-template-columns: 1fr; gap: 8px; padding: 6px; box-sizing: border-box; width: 100%; }
-    .gallery-column { gap: 8px; }
+    .hero-product-section { grid-template-columns: 1fr; gap: 8px; padding: 6px; box-sizing: border-box; width: 100%; max-width: 100%; overflow-x: hidden; }
+    .gallery-column { gap: 8px; width: 100%; max-width: 100%; overflow-x: hidden; }
     .main-gallery { width: 100%; height: auto; max-height: 280px; border-radius: 6px; }
     .main-gallery img { width: 100%; height: auto; max-height: 280px; object-fit: cover; }
-    .thumbnails-section { width: 100%; }
-    .thumbnails-list { gap: 6px; padding: 6px 0; width: 100%; overflow-x: auto; }
+    .thumbnails-section { width: 100%; max-width: 100%; }
+    .thumbnails-list { gap: 6px; padding: 6px 0; width: 100%; max-width: 100%; overflow-x: auto; }
     .thumbnail { min-width: 45px; width: 45px; height: 45px; flex-shrink: 0; }
 
-    .info-column { gap: 10px; }
+    .info-column { gap: 10px; width: 100%; max-width: 100%; overflow-x: hidden; }
     .workshop-title { font-size: 16px; }
-    .artist-card { padding: 10px; gap: 6px; }
+    .artist-card { padding: 10px; gap: 6px; width: 100%; max-width: 100%; }
 
-    .details-row-section { grid-template-columns: 1fr; gap: 6px; padding: 6px; box-sizing: border-box; width: 100%; }
-    .detail-box { padding: 6px; }
+    .details-row-section { grid-template-columns: 1fr; gap: 6px; padding: 6px; box-sizing: border-box; width: 100%; max-width: 100%; overflow-x: hidden; }
+    .detail-box { padding: 6px; width: 100%; max-width: 100%; }
 
-    .pricing-layout { grid-template-columns: 1fr; gap: 10px; padding: 6px; box-sizing: border-box; width: 100%; }
+    .pricing-layout { grid-template-columns: 1fr; gap: 10px; padding: 6px; box-sizing: border-box; width: 100%; max-width: 100%; overflow-x: hidden; }
     .pricing-inclusions h3, .pricing-selector h3 { font-size: 14px; }
     .room-option { padding: 8px; }
 
@@ -483,7 +505,7 @@ body.light-theme .footer {
     display: grid;
     grid-template-columns: 1fr;
     gap: 40px;
-    padding: 40px 30px;
+    padding: 40px 50px;
 }
 
 .content-area {
@@ -2315,14 +2337,17 @@ body.light-theme .footer {
 
 .faq-item {
     background: transparent;
-    border: 1px solid rgba(212, 175, 55, 0.3);
-    border-radius: 8px;
+    border: none;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 0;
     overflow: hidden;
     transition: all 0.3s ease;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .faq-item:hover {
-    border-color: rgba(212, 175, 55, 0.5);
+    border-bottom-color: rgba(212, 175, 55, 0.5);
 }
 
 .faq-toggle {
