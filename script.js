@@ -44,25 +44,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Booking form submission
-const bookingForm = document.getElementById('bookingForm');
-if (bookingForm) {
-    bookingForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('Thank you! We will contact you shortly with payment details.');
-        bookingForm.reset();
+// Pricing "Book Now" button - open Google Form in new tab
+const bookNowBtn = document.getElementById('bookNowBtn');
+const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSfyRGaZweRPNQWHU3jAglRaaprRmqM7UTYkhUeCuFWxApG-ag/viewform';
+
+if (bookNowBtn) {
+    bookNowBtn.addEventListener('click', () => {
+        window.open(googleFormUrl, '_blank');
     });
 }
-
-// Pricing Card "Book Now" buttons - scroll to booking form
-const bookButtons = document.querySelectorAll('.btn-book');
-bookButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const bookingForm = document.getElementById('bookingForm');
-        bookingForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        bookingForm.querySelector('input[type="text"]').focus();
-    });
-});
 
 // Mobile menu toggle (for future use if needed)
 const hamburger = document.getElementById('hamburger');
