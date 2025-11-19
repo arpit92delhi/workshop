@@ -115,15 +115,38 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    right: 30px;
+}
+
+.theme-switcher {
+    background: none;
+    border: none;
+    color: var(--text-white);
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.theme-switcher:hover {
+    background: rgba(212, 175, 55, 0.1);
+    color: var(--accent-gold);
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
     gap: 6px;
-    position: absolute;
-    right: 30px;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 .hamburger span {
@@ -172,6 +195,98 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-btn.book-quick:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(235, 85, 100, 0.4);
+}
+
+/* ============================================
+   LIGHT THEME
+   ============================================ */
+
+body.light-theme {
+    --primary-dark: #ffffff;
+    --bg-dark: #f5f5f5;
+    --text-white: #000000;
+    --text-light: #333333;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+body.light-theme .navbar {
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom-color: var(--accent-gold);
+}
+
+body.light-theme .section {
+    background: #f9f9f9;
+}
+
+body.light-theme h1,
+body.light-theme h2,
+body.light-theme h3,
+body.light-theme h4,
+body.light-theme h5,
+body.light-theme h6 {
+    color: #000000;
+}
+
+body.light-theme .logo-text {
+    -webkit-text-fill-color: unset;
+    background: linear-gradient(135deg, #d4af37, #e5e4e2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+body.light-theme .main-gallery,
+body.light-theme .gallery-carousel,
+body.light-theme .value-card,
+body.light-theme .testimonial-card,
+body.light-theme .faq-item,
+body.light-theme .reach-card {
+    background: #ffffff !important;
+    border-color: #ddd !important;
+}
+
+body.light-theme .pricing-layout {
+    background: transparent;
+}
+
+body.light-theme .room-option {
+    background: rgba(212, 175, 55, 0.05) !important;
+    border-color: #ddd !important;
+}
+
+body.light-theme .room-option:hover {
+    background: rgba(212, 175, 55, 0.1) !important;
+    border-color: var(--accent-gold) !important;
+}
+
+body.light-theme input[type="text"],
+body.light-theme input[type="email"],
+body.light-theme input[type="tel"],
+body.light-theme textarea,
+body.light-theme select {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ddd !important;
+}
+
+body.light-theme .artist-card,
+body.light-theme .detail-box {
+    background: #ffffff !important;
+    border-color: #ddd !important;
+}
+
+body.light-theme .day {
+    border-bottom-color: #ddd !important;
+}
+
+body.light-theme .policy-section {
+    background: transparent;
+}
+
+body.light-theme .footer {
+    background: #f5f5f5 !important;
+    border-top-color: #ddd !important;
 }
 
 /* Hero Product and Details Row Responsive */

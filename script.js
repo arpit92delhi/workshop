@@ -44,6 +44,31 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Theme Switcher
+const themeSwitcher = document.getElementById('themeSwitcher');
+const savedTheme = localStorage.getItem('theme') || 'dark';
+
+// Apply saved theme on page load
+if (savedTheme === 'light') {
+    document.body.classList.add('light-theme');
+    updateThemeSwitcherIcon();
+}
+
+themeSwitcher.addEventListener('click', () => {
+    const isLightTheme = document.body.classList.toggle('light-theme');
+    localStorage.setItem('theme', isLightTheme ? 'light' : 'dark');
+    updateThemeSwitcherIcon();
+});
+
+function updateThemeSwitcherIcon() {
+    const icon = themeSwitcher.querySelector('i');
+    if (document.body.classList.contains('light-theme')) {
+        icon.className = 'fas fa-sun';
+    } else {
+        icon.className = 'fas fa-moon';
+    }
+}
+
 // Pricing "Book Now" button - open Google Form in new tab
 const bookNowBtn = document.getElementById('bookNowBtn');
 const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSfyRGaZweRPNQWHU3jAglRaaprRmqM7UTYkhUeCuFWxApG-ag/viewform';
