@@ -2045,6 +2045,15 @@ body.light-theme .footer {
     box-shadow: var(--shadow-lg);
 }
 
+.booking-notice {
+    font-size: 12px;
+    color: var(--accent-gold);
+    text-align: center;
+    margin-top: 15px;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
 .btn-secondary {
     background: transparent;
     color: var(--accent-gold);
