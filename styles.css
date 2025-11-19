@@ -1336,7 +1336,9 @@ body.light-theme .footer {
     border-bottom: none;
 }
 
-#workshop-description {
+#workshop-description,
+#what-to-bring,
+#testimonials {
     padding-top: 0 !important;
     margin-top: 0 !important;
 }
