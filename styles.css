@@ -973,7 +973,7 @@ body.light-theme .footer {
     text-align: center;
     box-shadow: var(--shadow-sm);
     transition: all 0.3s ease;
-    max-height: 450px;
+    max-height: 520px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1334,6 +1334,11 @@ body.light-theme .footer {
 
 .section:last-child {
     border-bottom: none;
+}
+
+#workshop-description {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
 }
 
 .section h2 {
