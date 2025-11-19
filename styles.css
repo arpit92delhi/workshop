@@ -353,27 +353,32 @@ body.light-theme .footer {
 
     .hero-product-section { grid-template-columns: 1fr; gap: 12px; padding: 8px; box-sizing: border-box; width: 100%; }
     .gallery-column { gap: 12px; }
-    .main-gallery { width: 100%; border-radius: 8px; }
+    .main-gallery { width: 100%; height: auto; max-height: 350px; border-radius: 8px; }
+    .main-gallery img { width: 100%; height: auto; max-height: 350px; object-fit: cover; }
     .thumbnails-list { gap: 8px; }
     .thumbnail { min-width: 60px; height: 60px; }
 
     .info-column { gap: 12px; }
     .workshop-title { font-size: 18px; }
-    .artist-card { padding: 12px; gap: 8px; }
+    .artist-card { padding: 12px; gap: 8px; max-height: 200px; }
 
     .details-row-section { grid-template-columns: 1fr; gap: 8px; padding: 8px; box-sizing: border-box; width: 100%; }
-    .detail-box { padding: 8px; }
+    .detail-box { padding: 10px; min-height: auto; }
 
     .pricing-layout { grid-template-columns: 1fr; gap: 12px; padding: 8px; box-sizing: border-box; width: 100%; }
     .pricing-inclusions h3, .pricing-selector h3 { font-size: 15px; }
-    .room-option { padding: 10px; }
+    .room-option { padding: 12px; }
 
-    .value-card { padding: 8px; }
-    .value-card h3 { font-size: 12px; }
-    .testimonial-card { padding: 10px; }
+    /* Grids on Tablet */
+    .value-cards-grid { grid-template-columns: 1fr 1fr !important; gap: 10px !important; }
+    .value-card { padding: 10px; min-height: 0; }
+    .testimonials-grid { grid-template-columns: 1fr !important; gap: 10px !important; }
+    .testimonial-card { padding: 12px; min-height: auto; }
 
-    .day-toggle { padding: 10px; font-size: 14px; }
-    .faq-toggle { padding: 10px 12px; font-size: 13px; }
+    .day { margin-bottom: 8px; }
+    .day-toggle { padding: 12px; font-size: 14px; }
+    .faq-item { margin-bottom: 8px; }
+    .faq-toggle { padding: 12px 14px; font-size: 13px; }
 
     .footer { padding: 12px 8px; }
 }
@@ -408,11 +413,13 @@ body.light-theme .footer {
     }
     .section h2 { font-size: 16px !important; }
 
-    .hero-product-section { grid-template-columns: 1fr; gap: 10px; padding: 6px; box-sizing: border-box; width: 100%; }
-    .gallery-column { gap: 10px; }
-    .main-gallery { width: 100%; border-radius: 6px; }
-    .thumbnails-list { gap: 6px; }
-    .thumbnail { min-width: 50px; height: 50px; }
+    .hero-product-section { grid-template-columns: 1fr; gap: 8px; padding: 6px; box-sizing: border-box; width: 100%; }
+    .gallery-column { gap: 8px; }
+    .main-gallery { width: 100%; height: auto; max-height: 280px; border-radius: 6px; }
+    .main-gallery img { width: 100%; height: auto; max-height: 280px; object-fit: cover; }
+    .thumbnails-section { width: 100%; }
+    .thumbnails-list { gap: 6px; padding: 6px 0; width: 100%; overflow-x: auto; }
+    .thumbnail { min-width: 45px; width: 45px; height: 45px; flex-shrink: 0; }
 
     .info-column { gap: 10px; }
     .workshop-title { font-size: 16px; }
@@ -430,18 +437,31 @@ body.light-theme .footer {
     .exclusions-list { font-size: 11px; padding-left: 16px; }
     .exclusions-list li { margin-bottom: 4px; }
 
-    .value-card { padding: 6px; }
-    .value-card h3 { font-size: 11px; }
-    .value-card p { font-size: 10px; }
-    .testimonial-card { padding: 8px; }
-    .testimonial-card p { font-size: 11px; }
+    /* Value Cards Grid */
+    .value-cards-grid { grid-template-columns: 1fr 1fr !important; gap: 6px !important; }
+    .value-card { padding: 8px; min-height: 0; }
+    .value-card-icon { font-size: 24px; height: 24px; }
+    .value-card h3 { font-size: 12px; margin-bottom: 4px; }
+    .value-card p { font-size: 10px; line-height: 1.3; }
 
-    .day-toggle { padding: 8px; font-size: 12px; }
-    .activity-time { font-size: 10px; }
-    .activity-details { font-size: 11px; }
+    /* Testimonials Grid */
+    .testimonials-grid { grid-template-columns: 1fr !important; gap: 8px !important; }
+    .testimonial-card { padding: 10px; min-height: auto; max-height: 180px; }
+    .testimonial-card p { font-size: 12px; line-height: 1.4; }
+    .testimonial-author { font-size: 11px; margin-top: 6px; }
 
+    /* Itinerary */
+    .day { padding: 0; border-bottom: 1px solid rgba(212, 175, 55, 0.2); margin-bottom: 6px; }
+    .day-toggle { padding: 8px; font-size: 12px; gap: 8px; }
+    .day-toggle h3 { font-size: 13px; }
+    .activity-time { font-size: 10px; margin-bottom: 3px; }
+    .activity-details { font-size: 10px; line-height: 1.3; margin-top: 2px; }
+
+    /* FAQ */
+    .faq-item { border-radius: 4px; margin-bottom: 6px; }
     .faq-toggle { padding: 8px 10px; font-size: 12px; }
     .faq-toggle h3 { font-size: 12px; }
+    .faq-answer { font-size: 11px; line-height: 1.3; padding: 8px; }
 
     .footer { padding: 10px 6px; margin-top: 20px; }
     .footer-link { font-size: 10px; padding: 3px 4px; }
