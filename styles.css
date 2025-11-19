@@ -2546,7 +2546,7 @@ body.light-theme .footer {
     }
 
     .hamburger {
-        display: flex;
+        display: none !important;
     }
 
     .main-wrapper {
@@ -2655,6 +2655,10 @@ body.light-theme .footer {
 }
 
 @media (max-width: 480px) {
+    .hamburger {
+        display: none !important;
+    }
+
     .main-wrapper {
         max-width: 100%;
         width: 100%;
