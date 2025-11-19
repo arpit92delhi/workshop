@@ -2339,7 +2339,7 @@ body.light-theme .footer {
 .faq-container {
     margin-top: 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
