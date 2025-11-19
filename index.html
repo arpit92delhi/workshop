@@ -28,25 +28,46 @@
 
     <!-- Main Container -->
     <div class="main-wrapper">
-        <!-- Hero Section with Gallery + Side Info -->
-        <section class="hero-section">
-            <!-- Left: Gallery -->
-            <div class="hero-gallery-wrapper">
-                <div class="gallery-carousel" id="gallery">
-                    <div class="gallery-slide active">
-                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/05a77f165932129.64101010e52e6.jpg" alt="Photography Work">
+        <!-- HERO SECTION: Large 3D Image at Top -->
+        <section class="hero-image-section">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/05a77f165932129.64101010e52e6.jpg" alt="Varanasi Photography Hero">
+        </section>
+
+        <!-- THUMBNAIL GALLERY: List of Images Below Hero -->
+        <section class="thumbnail-gallery-section">
+            <div class="gallery-header">
+                <h3>Explore Our Photography</h3>
+            </div>
+            <div class="thumbnail-carousel">
+                <button class="carousel-btn carousel-prev">❮</button>
+                <div class="thumbnails-container">
+                    <div class="thumbnail-slide active" data-index="0">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/05a77f165932129.64101010e52e6.jpg" alt="Gallery 1">
                     </div>
-                    <div class="gallery-slide">
-                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/f0ae5f165932129.64101010e8271.jpg" alt="Photography Work">
+                    <div class="thumbnail-slide" data-index="1">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/f0ae5f165932129.64101010e8271.jpg" alt="Gallery 2">
+                    </div>
+                    <div class="thumbnail-slide" data-index="2">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/05a77f165932129.64101010e52e6.jpg" alt="Gallery 3">
+                    </div>
+                    <div class="thumbnail-slide" data-index="3">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/f0ae5f165932129.64101010e8271.jpg" alt="Gallery 4">
+                    </div>
+                    <div class="thumbnail-slide" data-index="4">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/05a77f165932129.64101010e52e6.jpg" alt="Gallery 5">
                     </div>
                 </div>
-                <button class="gallery-prev">❮</button>
-                <button class="gallery-next">❯</button>
+                <button class="carousel-btn carousel-next">❯</button>
             </div>
+        </section>
 
-            <!-- Right: Info Sidebar -->
-            <div class="hero-info-sidebar">
-                <!-- Artist Info -->
+        <!-- TWO-COLUMN: Left Sidebar + Center Details -->
+        <section class="workshop-info-section">
+            <!-- Left Sidebar -->
+            <div class="workshop-sidebar">
+                <div class="workshop-header">
+                    <h2>Street Photography Workshop<br>with Arpit Narain Saxena</h2>
+                </div>
                 <div class="artist-card">
                     <img src="dp.webp" alt="Arpit Narain Saxena" class="artist-img">
                     <h3>Arpit Narain Saxena</h3>
@@ -54,45 +75,38 @@
                     <p class="artist-bio">Renowned for travel & documentary photography. Specializes in composition, light, and storytelling.</p>
                     <a href="https://www.behance.net/arpit92saxdc70" target="_blank" class="btn-link">View Portfolio →</a>
                 </div>
+                <div class="sidebar-spacer"></div>
+            </div>
 
-                <!-- Quick Details -->
-                <div class="quick-details">
-                    <div class="detail-item">
-                        <span class="detail-label">Duration</span>
-                        <span class="detail-value">2 Days / 2 Nights</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="detail-label">Location</span>
-                        <span class="detail-value">Varanasi, UP</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="detail-label">Group Size</span>
-                        <span class="detail-value">Max 8 People</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="detail-label">Dates</span>
-                        <span class="detail-value">Jan 10-11, 2026</span>
+            <!-- Center Details Section -->
+            <div class="center-details">
+                <div class="detail-box">
+                    <div class="detail-icon">⏱️</div>
+                    <div class="detail-content">
+                        <p class="detail-label">Duration</p>
+                        <p class="detail-value">2 Days / 2 Nights</p>
                     </div>
                 </div>
-
-                <!-- Pricing Cards (Compact) -->
-                <div class="pricing-sidebar">
-                    <div class="pricing-option">
-                        <h4>Shared Room</h4>
-                        <p class="price">₹7,499</p>
-                        <button class="btn-book btn-secondary">Book</button>
-                    </div>
-                    <div class="pricing-option">
-                        <h4>Private Room</h4>
-                        <p class="price">₹9,999</p>
-                        <button class="btn-book btn-primary">Book</button>
+                <div class="detail-box">
+                    <div class="detail-icon">📍</div>
+                    <div class="detail-content">
+                        <p class="detail-label">Location</p>
+                        <p class="detail-value">Varanasi, UP</p>
                     </div>
                 </div>
-
-                <!-- Urgency Badge -->
-                <div class="urgency-box">
-                    <span class="urgency-icon">⚡</span>
-                    <p>Only 3 Spots Left</p>
+                <div class="detail-box">
+                    <div class="detail-icon">👥</div>
+                    <div class="detail-content">
+                        <p class="detail-label">Group Size</p>
+                        <p class="detail-value">Max 8 People</p>
+                    </div>
+                </div>
+                <div class="detail-box">
+                    <div class="detail-icon">📅</div>
+                    <div class="detail-content">
+                        <p class="detail-label">Dates</p>
+                        <p class="detail-value">Jan 10-11, 2026</p>
+                    </div>
                 </div>
             </div>
         </section>

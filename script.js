@@ -1,29 +1,27 @@
-// Gallery carousel
-const gallerySlides = document.querySelectorAll('.gallery-slide');
-const prevBtn = document.querySelector('.gallery-prev');
-const nextBtn = document.querySelector('.gallery-next');
-let currentSlide = 0;
+// Thumbnail Gallery Carousel
+const thumbnailSlides = document.querySelectorAll('.thumbnail-slide');
+const thumbnailContainer = document.querySelector('.thumbnails-container');
+const prevCarouselBtn = document.querySelector('.carousel-prev');
+const nextCarouselBtn = document.querySelector('.carousel-next');
 
-function showSlide(index) {
-    gallerySlides.forEach(slide => slide.classList.remove('active'));
-    gallerySlides[index].classList.add('active');
+if (prevCarouselBtn && nextCarouselBtn) {
+    prevCarouselBtn.addEventListener('click', () => {
+        thumbnailContainer.scrollLeft -= 150;
+    });
+
+    nextCarouselBtn.addEventListener('click', () => {
+        thumbnailContainer.scrollLeft += 150;
+    });
 }
 
-function nextSlide() {
-    currentSlide = (currentSlide + 1) % gallerySlides.length;
-    showSlide(currentSlide);
-}
-
-function prevSlide() {
-    currentSlide = (currentSlide - 1 + gallerySlides.length) % gallerySlides.length;
-    showSlide(currentSlide);
-}
-
-prevBtn.addEventListener('click', prevSlide);
-nextBtn.addEventListener('click', nextSlide);
-
-// Auto-rotate gallery every 8.5 seconds
-setInterval(nextSlide, 8500);
+// Click to select thumbnail
+thumbnailSlides.forEach(slide => {
+    slide.addEventListener('click', () => {
+        thumbnailSlides.forEach(s => s.classList.remove('active'));
+        slide.classList.add('active');
+        slide.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
+});
 
 // Itinerary Collapsible
 const dayToggles = document.querySelectorAll('.day-toggle');
