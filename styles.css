@@ -590,12 +590,13 @@ body.light-theme .footer {
 
     /* ===== NAVBAR ===== */
     .navbar {
-        padding: 10px 8px;
+        padding: 8px 6px;
     }
 
     .nav-container {
         max-width: 100%;
-        padding: 0 3px;
+        padding: 0 2px;
+        width: 100%;
     }
 
     .logo-text {
@@ -2857,9 +2858,10 @@ body.light-theme .footer {
     .main-wrapper {
         max-width: 100%;
         width: 100%;
-        padding: 15px 12px;
-        margin: 0;
-        gap: 25px;
+        padding: 10px 8px;
+        margin: 0 auto;
+        gap: 20px;
+        box-sizing: border-box;
     }
 
     .form-row {
