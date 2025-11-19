@@ -324,6 +324,8 @@ body.light-theme .footer {
 @media (max-width: 768px) {
     body {
         font-size: 15px;
+        overflow-x: hidden;
+        width: 100%;
     }
 
     h1 { font-size: 24px !important; margin-bottom: 12px !important; }
@@ -337,10 +339,19 @@ body.light-theme .footer {
     .logo-text { font-size: 20px; }
     .navbar-ctas { display: none; }
 
-    .section { padding: 15px 0 !important; margin-bottom: 15px !important; }
+    .main-wrapper { padding: 0 !important; }
+
+    .section {
+        padding: 12px 0 !important;
+        margin-bottom: 12px !important;
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+        width: 100%;
+        box-sizing: border-box;
+    }
     .section h2 { font-size: 18px !important; }
 
-    .hero-product-section { grid-template-columns: 1fr; gap: 12px; padding: 0; }
+    .hero-product-section { grid-template-columns: 1fr; gap: 12px; padding: 8px; box-sizing: border-box; width: 100%; }
     .gallery-column { gap: 12px; }
     .main-gallery { width: 100%; border-radius: 8px; }
     .thumbnails-list { gap: 8px; }
@@ -350,10 +361,10 @@ body.light-theme .footer {
     .workshop-title { font-size: 18px; }
     .artist-card { padding: 12px; gap: 8px; }
 
-    .details-row-section { grid-template-columns: 1fr; gap: 8px; padding: 0; }
+    .details-row-section { grid-template-columns: 1fr; gap: 8px; padding: 8px; box-sizing: border-box; width: 100%; }
     .detail-box { padding: 8px; }
 
-    .pricing-layout { grid-template-columns: 1fr; gap: 12px; }
+    .pricing-layout { grid-template-columns: 1fr; gap: 12px; padding: 8px; box-sizing: border-box; width: 100%; }
     .pricing-inclusions h3, .pricing-selector h3 { font-size: 15px; }
     .room-option { padding: 10px; }
 
@@ -364,11 +375,15 @@ body.light-theme .footer {
     .day-toggle { padding: 10px; font-size: 14px; }
     .faq-toggle { padding: 10px 12px; font-size: 13px; }
 
-    .footer { padding: 15px 8px; }
+    .footer { padding: 12px 8px; }
 }
 
 @media (max-width: 480px) {
-    body { font-size: 13px; }
+    body {
+        font-size: 13px;
+        overflow-x: hidden;
+        width: 100%;
+    }
     h1 { font-size: 22px !important; margin-bottom: 10px !important; }
     h2 { font-size: 18px !important; margin-bottom: 10px !important; }
     h3 { font-size: 15px !important; margin-bottom: 8px !important; }
@@ -381,10 +396,19 @@ body.light-theme .footer {
     .logo-author { font-size: 8px; }
     .navbar-ctas { display: none; }
 
-    .section { padding: 10px 0 !important; margin-bottom: 10px !important; }
+    .main-wrapper { padding: 0 !important; }
+
+    .section {
+        padding: 8px 0 !important;
+        margin-bottom: 8px !important;
+        padding-left: 6px !important;
+        padding-right: 6px !important;
+        width: 100%;
+        box-sizing: border-box;
+    }
     .section h2 { font-size: 16px !important; }
 
-    .hero-product-section { grid-template-columns: 1fr; gap: 10px; padding: 0; }
+    .hero-product-section { grid-template-columns: 1fr; gap: 10px; padding: 6px; box-sizing: border-box; width: 100%; }
     .gallery-column { gap: 10px; }
     .main-gallery { width: 100%; border-radius: 6px; }
     .thumbnails-list { gap: 6px; }
@@ -394,10 +418,10 @@ body.light-theme .footer {
     .workshop-title { font-size: 16px; }
     .artist-card { padding: 10px; gap: 6px; }
 
-    .details-row-section { grid-template-columns: 1fr; gap: 6px; padding: 0; }
+    .details-row-section { grid-template-columns: 1fr; gap: 6px; padding: 6px; box-sizing: border-box; width: 100%; }
     .detail-box { padding: 6px; }
 
-    .pricing-layout { grid-template-columns: 1fr; gap: 10px; }
+    .pricing-layout { grid-template-columns: 1fr; gap: 10px; padding: 6px; box-sizing: border-box; width: 100%; }
     .pricing-inclusions h3, .pricing-selector h3 { font-size: 14px; }
     .room-option { padding: 8px; }
 
@@ -419,7 +443,7 @@ body.light-theme .footer {
     .faq-toggle { padding: 8px 10px; font-size: 12px; }
     .faq-toggle h3 { font-size: 12px; }
 
-    .footer { padding: 12px 6px; margin-top: 20px; }
+    .footer { padding: 10px 6px; margin-top: 20px; }
     .footer-link { font-size: 10px; padding: 3px 4px; }
 
     input, textarea, select { font-size: 12px !important; padding: 8px !important; }
