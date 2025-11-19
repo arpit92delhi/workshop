@@ -438,8 +438,8 @@ body.light-theme .footer {
 
     .hero-product-section { grid-template-columns: 1fr !important; gap: 8px !important; padding: 6px !important; box-sizing: border-box !important; width: 100% !important; max-width: 100% !important; overflow-x: hidden !important; display: grid !important; }
     .gallery-column { gap: 8px !important; width: 100% !important; max-width: 100% !important; overflow-x: hidden !important; }
-    .main-gallery { width: 100% !important; height: auto !important; max-height: 280px !important; border-radius: 6px; }
-    .main-gallery img { width: 100% !important; height: auto !important; max-height: 280px !important; object-fit: cover; }
+    .main-gallery { width: 100% !important; height: auto !important; max-height: 220px !important; border-radius: 6px; }
+    .main-gallery img { width: 100% !important; height: auto !important; max-height: 220px !important; object-fit: cover; }
     .thumbnails-section { width: 100% !important; max-width: 100% !important; }
     .thumbnails-list { gap: 6px !important; padding: 6px 0 !important; width: 100% !important; max-width: 100% !important; overflow-x: auto !important; }
     .thumbnail { min-width: 45px; width: 45px; height: 45px; flex-shrink: 0; }
