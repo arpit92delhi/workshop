@@ -172,17 +172,17 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 4px 15px rgba(235, 85, 100, 0.4);
 }
 
-/* Product Section Responsive */
+/* Gallery and Product Section Responsive */
 @media (max-width: 1200px) {
     .product-section {
-        grid-template-columns: 1.1fr 1fr;
+        grid-template-columns: 0.9fr 1.1fr;
         gap: 50px;
     }
 }
 
 @media (max-width: 1024px) {
     .product-section {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1.1fr;
         gap: 40px;
     }
 
@@ -222,6 +222,10 @@ h1, h2, h3, h4, h5, h6 {
 
     .workshop-title {
         font-size: 24px;
+    }
+
+    .main-gallery {
+        margin-bottom: 25px;
     }
 
     .navbar-ctas {
@@ -276,6 +280,10 @@ h1, h2, h3, h4, h5, h6 {
 
     .urgency-box {
         padding: 12px;
+    }
+
+    .gallery-section {
+        margin-bottom: 40px;
     }
 }
 
@@ -350,25 +358,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================
-   PRODUCT SECTION - Two Column Layout
+   GALLERY SECTION - Full Width
    ============================================ */
 
-.product-section {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 60px;
-    margin-bottom: 80px;
-    align-items: flex-start;
-}
-
-/* ============================================
-   GALLERY COLUMN - Left Side
-   ============================================ */
-
-.gallery-column {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.gallery-section {
+    margin-bottom: 60px;
 }
 
 .main-gallery {
@@ -377,6 +371,7 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
     border: 1px solid rgba(212, 175, 55, 0.3);
     box-shadow: var(--shadow-lg);
+    margin-bottom: 30px;
 }
 
 .main-gallery img {
@@ -386,7 +381,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================
-   THUMBNAILS - Below Main Image
+   THUMBNAILS - Horizontal Scroll
    ============================================ */
 
 .thumbnails-section {
@@ -441,6 +436,24 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+/* ============================================
+   PRODUCT SECTION - Two Column Layout
+   ============================================ */
+
+.product-section {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    margin-bottom: 80px;
+    align-items: flex-start;
+}
+
+.duration-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 /* ============================================
