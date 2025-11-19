@@ -322,15 +322,9 @@ body.light-theme .footer {
 }
 
 @media (max-width: 768px) {
-    /* Prevent any overflow */
-    * {
-        max-width: 100%;
-    }
-
     /* Mobile/Tablet Text Sizing */
     body {
         font-size: 15px;
-        overflow-x: hidden;
     }
 
     h1 {
@@ -390,64 +384,40 @@ body.light-theme .footer {
         grid-template-columns: 1fr;
         gap: 15px;
         padding: 0;
-        overflow: hidden;
     }
 
     .gallery-column {
         gap: 15px;
-        width: 100%;
-        overflow-x: hidden;
-    }
-
-    .main-gallery {
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .main-gallery img {
-        width: 100% !important;
-        max-width: 100%;
     }
 
     .thumbnail {
         min-width: 70px;
-        width: 70px;
         height: 70px;
-        flex-shrink: 0;
     }
 
     .thumbnails-list {
         gap: 10px;
-        width: 100%;
-        overflow-x: auto;
     }
 
     /* Info Column */
     .info-column {
         gap: 18px;
-        width: 100%;
-        overflow-x: hidden;
     }
 
     .workshop-title {
         font-size: 22px;
-        width: 100%;
     }
 
     .artist-card {
         padding: 18px;
-        width: 100%;
-        overflow-x: hidden;
     }
 
     .artist-card h3 {
         font-size: 15px;
-        width: 100%;
     }
 
     .artist-card p {
         font-size: 13px;
-        width: 100%;
     }
 
     /* Details Row */
@@ -586,16 +556,9 @@ body.light-theme .footer {
 }
 
 @media (max-width: 480px) {
-    /* Prevent overflow on everything */
-    * {
-        box-sizing: border-box;
-        max-width: 100%;
-    }
-
     /* ===== GLOBAL TEXT SIZING ===== */
     body {
         font-size: 14px;
-        overflow-x: hidden;
     }
 
     h1 {
@@ -647,81 +610,58 @@ body.light-theme .footer {
     .section {
         padding: 15px 0 !important;
         margin-bottom: 20px !important;
-        width: 100%;
-        overflow-x: hidden;
     }
 
     .section h2 {
         font-size: 18px !important;
-        width: 100%;
     }
 
     /* ===== HERO & GALLERY ===== */
     .hero-product-section {
+        grid-template-columns: 1fr;
         gap: 12px;
         padding: 0;
-        overflow: hidden;
     }
 
     .gallery-column {
         gap: 12px;
-        width: 100%;
-        overflow-x: hidden;
     }
 
     .main-gallery {
         border-radius: 8px;
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .main-gallery img {
-        width: 100% !important;
-        max-width: 100%;
     }
 
     .thumbnails-list {
         gap: 8px;
         padding: 3px 0;
-        width: 100%;
-        overflow-x: auto;
     }
 
     .thumbnail {
         min-width: 50px;
-        width: 50px;
         height: 50px;
         border-radius: 6px;
-        flex-shrink: 0;
     }
 
     /* ===== INFO COLUMN ===== */
     .info-column {
         gap: 15px;
-        width: 100%;
-        overflow-x: hidden;
     }
 
     .workshop-title {
         font-size: 18px;
-        width: 100%;
     }
 
     .artist-card {
         padding: 15px;
         gap: 8px;
-        width: 100%;
-        overflow-x: hidden;
     }
 
     .artist-card h3 {
         font-size: 14px;
-        width: 100%;
     }
 
     .artist-card p {
         font-size: 12px;
-        width: 100%;
     }
 
     /* ===== DETAILS ROW ===== */
@@ -918,9 +858,6 @@ body.light-theme .footer {
     grid-template-columns: 1fr;
     gap: 40px;
     padding: 40px 30px;
-    width: 100%;
-    box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 .content-area {
