@@ -595,12 +595,15 @@ body.light-theme .footer {
     overflow: hidden;
     border: 1px solid rgba(212, 175, 55, 0.3);
     box-shadow: var(--shadow-lg);
+    max-height: 450px;
 }
 
 .main-gallery img {
     width: 100%;
     height: auto;
     display: block;
+    max-height: 450px;
+    object-fit: cover;
 }
 
 /* ============================================
