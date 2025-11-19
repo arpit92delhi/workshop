@@ -322,530 +322,111 @@ body.light-theme .footer {
 }
 
 @media (max-width: 768px) {
-    /* Mobile/Tablet Text Sizing */
     body {
         font-size: 15px;
     }
 
-    h1 {
-        font-size: 26px !important;
-        margin-bottom: 15px !important;
-    }
+    h1 { font-size: 24px !important; margin-bottom: 12px !important; }
+    h2 { font-size: 20px !important; margin-bottom: 12px !important; }
+    h3 { font-size: 16px !important; margin-bottom: 10px !important; }
+    h4, h5, h6 { font-size: 14px !important; }
+    p { font-size: 14px !important; }
 
-    h2 {
-        font-size: 22px !important;
-        margin-bottom: 15px !important;
-    }
+    .navbar { padding: 10px 8px; }
+    .nav-container { padding: 0 4px; }
+    .logo-text { font-size: 20px; }
+    .navbar-ctas { display: none; }
 
-    h3 {
-        font-size: 18px !important;
-        margin-bottom: 12px !important;
-    }
+    .section { padding: 15px 0 !important; margin-bottom: 15px !important; }
+    .section h2 { font-size: 18px !important; }
 
-    h4 {
-        font-size: 15px !important;
-    }
+    .hero-product-section { grid-template-columns: 1fr; gap: 12px; padding: 0; }
+    .gallery-column { gap: 12px; }
+    .main-gallery { width: 100%; border-radius: 8px; }
+    .thumbnails-list { gap: 8px; }
+    .thumbnail { min-width: 60px; height: 60px; }
 
-    h5, h6 {
-        font-size: 14px !important;
-    }
+    .info-column { gap: 12px; }
+    .workshop-title { font-size: 18px; }
+    .artist-card { padding: 12px; gap: 8px; }
 
-    p {
-        font-size: 14px !important;
-        line-height: 1.6 !important;
-    }
+    .details-row-section { grid-template-columns: 1fr; gap: 8px; padding: 0; }
+    .detail-box { padding: 8px; }
 
-    /* Navbar */
-    .navbar {
-        padding: 12px 10px;
-    }
+    .pricing-layout { grid-template-columns: 1fr; gap: 12px; }
+    .pricing-inclusions h3, .pricing-selector h3 { font-size: 15px; }
+    .room-option { padding: 10px; }
 
-    .nav-container {
-        max-width: 100%;
-        padding: 0 5px;
-    }
+    .value-card { padding: 8px; }
+    .value-card h3 { font-size: 12px; }
+    .testimonial-card { padding: 10px; }
 
-    .logo-text {
-        font-size: 22px;
-    }
+    .day-toggle { padding: 10px; font-size: 14px; }
+    .faq-toggle { padding: 10px 12px; font-size: 13px; }
 
-    /* Sections */
-    .section {
-        padding: 20px 0 !important;
-        margin-bottom: 25px !important;
-    }
-
-    .section h2 {
-        font-size: 20px !important;
-    }
-
-    /* Hero & Gallery */
-    .hero-product-section {
-        grid-template-columns: 1fr;
-        gap: 15px;
-        padding: 0;
-    }
-
-    .gallery-column {
-        gap: 15px;
-    }
-
-    .thumbnail {
-        min-width: 70px;
-        height: 70px;
-    }
-
-    .thumbnails-list {
-        gap: 10px;
-    }
-
-    /* Info Column */
-    .info-column {
-        gap: 18px;
-    }
-
-    .workshop-title {
-        font-size: 22px;
-    }
-
-    .artist-card {
-        padding: 18px;
-    }
-
-    .artist-card h3 {
-        font-size: 15px;
-    }
-
-    .artist-card p {
-        font-size: 13px;
-    }
-
-    /* Details Row */
-    .details-row-section {
-        grid-template-columns: 1fr;
-        padding: 10px 0;
-        gap: 10px;
-    }
-
-    .detail-box {
-        padding: 12px;
-    }
-
-    .detail-label {
-        font-size: 12px;
-    }
-
-    .detail-value {
-        font-size: 15px;
-    }
-
-    /* Pricing */
-    .pricing-layout {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .pricing-inclusions h3,
-    .pricing-selector h3 {
-        font-size: 18px;
-    }
-
-    .inclusions-list li {
-        font-size: 13px;
-    }
-
-    .room-option {
-        padding: 14px;
-    }
-
-    .option-title {
-        font-size: 15px;
-    }
-
-    .option-price {
-        font-size: 17px;
-    }
-
-    .policy-title {
-        font-size: 18px;
-    }
-
-    .policy-text {
-        font-size: 13px;
-    }
-
-    .exclusions-list {
-        font-size: 13px;
-    }
-
-    /* Cards & Testimonials */
-    .value-card {
-        padding: 12px;
-    }
-
-    .value-card h3 {
-        font-size: 14px;
-    }
-
-    .value-card p {
-        font-size: 12px;
-    }
-
-    .testimonial-card {
-        padding: 15px;
-    }
-
-    .testimonial-card p {
-        font-size: 13px;
-    }
-
-    /* Itinerary */
-    .day-toggle {
-        padding: 14px;
-    }
-
-    .day-toggle h3 {
-        font-size: 15px;
-    }
-
-    .activity-time {
-        font-size: 13px;
-    }
-
-    .activity-details {
-        font-size: 13px;
-    }
-
-    /* FAQ */
-    .faq-toggle {
-        padding: 14px 18px;
-        font-size: 15px;
-    }
-
-    .faq-toggle h3 {
-        font-size: 15px;
-    }
-
-    .faq-answer {
-        font-size: 13px;
-    }
-
-    /* Footer */
-    .footer {
-        padding: 25px 15px;
-    }
-
-    .footer-link {
-        font-size: 12px;
-    }
-
-    /* Nav */
-    .navbar-ctas {
-        display: none;
-    }
-
-    .nav-right {
-        gap: 8px;
-        right: 10px;
-    }
-
-    .theme-switcher {
-        font-size: 16px;
-        padding: 4px;
-    }
+    .footer { padding: 15px 8px; }
 }
 
 @media (max-width: 480px) {
-    /* ===== GLOBAL TEXT SIZING ===== */
-    body {
-        font-size: 14px;
-    }
+    body { font-size: 13px; }
+    h1 { font-size: 22px !important; margin-bottom: 10px !important; }
+    h2 { font-size: 18px !important; margin-bottom: 10px !important; }
+    h3 { font-size: 15px !important; margin-bottom: 8px !important; }
+    h4, h5, h6 { font-size: 13px !important; }
+    p, span, a { font-size: 12px !important; }
 
-    h1 {
-        font-size: 24px !important;
-        margin-bottom: 12px !important;
-    }
+    .navbar { padding: 8px 5px; }
+    .nav-container { padding: 0 3px; }
+    .logo-text { font-size: 18px; }
+    .logo-author { font-size: 8px; }
+    .navbar-ctas { display: none; }
 
-    h2 {
-        font-size: 20px !important;
-        margin-bottom: 12px !important;
-    }
+    .section { padding: 10px 0 !important; margin-bottom: 10px !important; }
+    .section h2 { font-size: 16px !important; }
 
-    h3 {
-        font-size: 16px !important;
-        margin-bottom: 10px !important;
-    }
+    .hero-product-section { grid-template-columns: 1fr; gap: 10px; padding: 0; }
+    .gallery-column { gap: 10px; }
+    .main-gallery { width: 100%; border-radius: 6px; }
+    .thumbnails-list { gap: 6px; }
+    .thumbnail { min-width: 50px; height: 50px; }
 
-    h4 {
-        font-size: 14px !important;
-    }
+    .info-column { gap: 10px; }
+    .workshop-title { font-size: 16px; }
+    .artist-card { padding: 10px; gap: 6px; }
 
-    h5, h6 {
-        font-size: 13px !important;
-    }
+    .details-row-section { grid-template-columns: 1fr; gap: 6px; padding: 0; }
+    .detail-box { padding: 6px; }
 
-    p, span, a {
-        font-size: 13px !important;
-    }
+    .pricing-layout { grid-template-columns: 1fr; gap: 10px; }
+    .pricing-inclusions h3, .pricing-selector h3 { font-size: 14px; }
+    .room-option { padding: 8px; }
 
-    /* ===== NAVBAR ===== */
-    .navbar {
-        padding: 8px 6px;
-    }
+    .policy-title { font-size: 14px; margin-bottom: 6px; }
+    .policy-text { font-size: 11px; }
+    .exclusions-list { font-size: 11px; padding-left: 16px; }
+    .exclusions-list li { margin-bottom: 4px; }
 
-    .nav-container {
-        max-width: 100%;
-        padding: 0 2px;
-        width: 100%;
-    }
+    .value-card { padding: 6px; }
+    .value-card h3 { font-size: 11px; }
+    .value-card p { font-size: 10px; }
+    .testimonial-card { padding: 8px; }
+    .testimonial-card p { font-size: 11px; }
 
-    .logo-text {
-        font-size: 20px;
-    }
+    .day-toggle { padding: 8px; font-size: 12px; }
+    .activity-time { font-size: 10px; }
+    .activity-details { font-size: 11px; }
 
-    .logo-author {
-        font-size: 9px;
-    }
+    .faq-toggle { padding: 8px 10px; font-size: 12px; }
+    .faq-toggle h3 { font-size: 12px; }
 
-    /* ===== SECTIONS ===== */
-    .section {
-        padding: 15px 0 !important;
-        margin-bottom: 20px !important;
-    }
+    .footer { padding: 12px 6px; margin-top: 20px; }
+    .footer-link { font-size: 10px; padding: 3px 4px; }
 
-    .section h2 {
-        font-size: 18px !important;
-    }
+    input, textarea, select { font-size: 12px !important; padding: 8px !important; }
 
-    /* ===== HERO & GALLERY ===== */
-    .hero-product-section {
-        grid-template-columns: 1fr;
-        gap: 12px;
-        padding: 0;
-    }
-
-    .gallery-column {
-        gap: 12px;
-    }
-
-    .main-gallery {
-        border-radius: 8px;
-    }
-
-    .thumbnails-list {
-        gap: 8px;
-        padding: 3px 0;
-    }
-
-    .thumbnail {
-        min-width: 50px;
-        height: 50px;
-        border-radius: 6px;
-    }
-
-    /* ===== INFO COLUMN ===== */
-    .info-column {
-        gap: 15px;
-    }
-
-    .workshop-title {
-        font-size: 18px;
-    }
-
-    .artist-card {
-        padding: 15px;
-        gap: 8px;
-    }
-
-    .artist-card h3 {
-        font-size: 14px;
-    }
-
-    .artist-card p {
-        font-size: 12px;
-    }
-
-    /* ===== DETAILS ROW ===== */
-    .details-row-section {
-        grid-template-columns: 1fr;
-        padding: 8px 0;
-        gap: 8px;
-        margin-bottom: 15px;
-    }
-
-    .detail-box {
-        padding: 10px;
-        gap: 6px;
-    }
-
-    .detail-label {
-        font-size: 11px;
-    }
-
-    .detail-value {
-        font-size: 14px;
-    }
-
-    /* ===== PRICING ===== */
-    .pricing-layout {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-
-    .pricing-inclusions h3,
-    .pricing-selector h3 {
-        font-size: 16px;
-    }
-
-    .inclusions-list li {
-        font-size: 12px;
-        margin-bottom: 6px;
-    }
-
-    .room-option {
-        padding: 12px;
-        gap: 10px;
-    }
-
-    .option-title {
-        font-size: 14px;
-    }
-
-    .option-price {
-        font-size: 16px;
-    }
-
-    .option-price.original {
-        font-size: 12px;
-    }
-
-    .discount-badge {
-        font-size: 10px;
-        padding: 3px 6px;
-    }
-
-    .btn-primary, .btn-book {
-        padding: 12px 20px;
-        font-size: 14px;
-    }
-
-    .policy-title {
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-
-    .policy-text {
-        font-size: 12px;
-        line-height: 1.6;
-    }
-
-    .exclusions-list {
-        font-size: 12px;
-        padding-left: 20px;
-    }
-
-    .exclusions-list li {
-        margin-bottom: 6px;
-    }
-
-    /* ===== VALUE CARDS & TESTIMONIALS ===== */
-    .value-card {
-        padding: 10px;
-        gap: 6px;
-    }
-
-    .value-card h3 {
-        font-size: 13px;
-    }
-
-    .value-card p {
-        font-size: 11px;
-    }
-
-    .testimonial-card {
-        padding: 12px;
-    }
-
-    .testimonial-card p {
-        font-size: 12px;
-        line-height: 1.5;
-    }
-
-    .testimonial-author {
-        font-size: 12px;
-    }
-
-    /* ===== ITINERARY ===== */
-    .day-toggle {
-        padding: 12px;
-        font-size: 14px;
-    }
-
-    .day-toggle h3 {
-        font-size: 14px;
-    }
-
-    .activity-time {
-        font-size: 12px;
-    }
-
-    .activity-details {
-        font-size: 12px;
-        line-height: 1.5;
-    }
-
-    /* ===== FAQ ===== */
-    .faq-toggle {
-        padding: 12px 15px;
-        font-size: 14px;
-    }
-
-    .faq-toggle h3 {
-        font-size: 14px;
-    }
-
-    .faq-answer {
-        font-size: 12px;
-        line-height: 1.6;
-    }
-
-    /* ===== FOOTER ===== */
-    .footer {
-        padding: 20px 12px;
-        margin-top: 40px;
-    }
-
-    .footer-content {
-        gap: 12px;
-    }
-
-    .footer-link {
-        font-size: 11px;
-        padding: 4px 6px;
-    }
-
-    /* ===== FORMS ===== */
-    input, textarea, select {
-        font-size: 14px !important;
-        padding: 10px !important;
-    }
-
-    /* ===== MISC ===== */
-    .nav-right {
-        gap: 6px;
-        right: 8px;
-    }
-
-    .theme-switcher {
-        font-size: 14px;
-        padding: 3px;
-    }
-
-    .whatsapp-btn {
-        width: 50px;
-        height: 50px;
-        font-size: 22px;
-    }
+    .nav-right { gap: 5px; right: 5px; }
+    .theme-switcher { font-size: 12px; padding: 2px; }
+    .whatsapp-btn { width: 45px; height: 45px; font-size: 20px; }
 }
 
 /* ============================================
@@ -2856,12 +2437,11 @@ body.light-theme .footer {
     }
 
     .main-wrapper {
-        max-width: 100%;
+        max-width: none;
         width: 100%;
-        padding: 10px 8px;
-        margin: 0 auto;
-        gap: 20px;
-        box-sizing: border-box;
+        padding: 8px 6px;
+        margin: 0;
+        gap: 10px;
     }
 
     .form-row {
