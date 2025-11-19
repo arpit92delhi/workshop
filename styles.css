@@ -973,6 +973,10 @@ body.light-theme .footer {
     text-align: center;
     box-shadow: var(--shadow-sm);
     transition: all 0.3s ease;
+    max-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .artist-card:hover {
