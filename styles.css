@@ -1709,13 +1709,13 @@ body.light-theme .footer {
 }
 
 .day-number {
-    font-size: 48px;
+    font-size: 32px;
     font-weight: 900;
     background: linear-gradient(135deg, var(--accent-gold), var(--accent-platinum));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    min-width: 80px;
+    min-width: 60px;
     font-family: 'Poppins', sans-serif;
 }
 
