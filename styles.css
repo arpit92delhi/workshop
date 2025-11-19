@@ -172,18 +172,22 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 4px 15px rgba(235, 85, 100, 0.4);
 }
 
-/* Gallery and Product Section Responsive */
+/* Hero Product and Details Row Responsive */
 @media (max-width: 1200px) {
-    .product-section {
-        grid-template-columns: 0.9fr 1.1fr;
+    .hero-product-section {
+        grid-template-columns: 1.1fr 0.9fr;
         gap: 50px;
     }
 }
 
 @media (max-width: 1024px) {
-    .product-section {
-        grid-template-columns: 1fr 1.1fr;
+    .hero-product-section {
+        grid-template-columns: 1fr 1fr;
         gap: 40px;
+    }
+
+    .details-row-section {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .navbar-ctas {
@@ -197,10 +201,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
-    /* Mobile: Stack product section vertically */
-    .product-section {
+    /* Mobile: Stack hero section vertically */
+    .hero-product-section {
         grid-template-columns: 1fr;
         gap: 40px;
+    }
+
+    .details-row-section {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
     }
 
     .thumbnail {
@@ -208,24 +217,8 @@ h1, h2, h3, h4, h5, h6 {
         height: 80px;
     }
 
-    .key-details {
-        padding: 20px;
-    }
-
-    .detail-item {
-        gap: 12px;
-    }
-
-    .detail-item .detail-icon {
-        font-size: 24px;
-    }
-
     .workshop-title {
         font-size: 24px;
-    }
-
-    .main-gallery {
-        margin-bottom: 25px;
     }
 
     .navbar-ctas {
@@ -252,8 +245,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 480px) {
-    .product-section {
+    .hero-product-section {
         gap: 30px;
+    }
+
+    .details-row-section {
+        grid-template-columns: 1fr;
+        padding: 15px;
+        margin-bottom: 60px;
     }
 
     .thumbnail {
@@ -263,11 +262,6 @@ h1, h2, h3, h4, h5, h6 {
 
     .workshop-title {
         font-size: 20px;
-    }
-
-    .key-details {
-        padding: 15px;
-        gap: 15px;
     }
 
     .pricing-options {
@@ -280,10 +274,6 @@ h1, h2, h3, h4, h5, h6 {
 
     .urgency-box {
         padding: 12px;
-    }
-
-    .gallery-section {
-        margin-bottom: 40px;
     }
 }
 
@@ -358,11 +348,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================
-   GALLERY SECTION - Full Width
+   HERO PRODUCT SECTION - Two Column
    ============================================ */
 
-.gallery-section {
+.hero-product-section {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
     margin-bottom: 60px;
+    align-items: flex-start;
+}
+
+/* ============================================
+   GALLERY COLUMN - Left Side
+   ============================================ */
+
+.gallery-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .main-gallery {
@@ -371,7 +375,6 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
     border: 1px solid rgba(212, 175, 55, 0.3);
     box-shadow: var(--shadow-lg);
-    margin-bottom: 30px;
 }
 
 .main-gallery img {
@@ -439,50 +442,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================
-   PRODUCT SECTION - Two Column Layout
+   INFO COLUMN - Right Side
    ============================================ */
 
-.product-section {
+.info-column {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* ============================================
+   DETAILS ROW SECTION - Full Width Below
+   ============================================ */
+
+.details-row-section {
     display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 60px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
     margin-bottom: 80px;
-    align-items: flex-start;
-}
-
-.duration-column {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-/* ============================================
-   DETAILS COLUMN - Right Side
-   ============================================ */
-
-.details-column {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.workshop-title {
-    font-size: 32px;
-    color: var(--text-white);
-    font-weight: 700;
-    line-height: 1.3;
-    margin: 0;
-}
-
-/* ============================================
-   KEY DETAILS SECTION
-   ============================================ */
-
-.key-details {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 25px;
+    padding: 30px;
     background:
         repeating-linear-gradient(
             45deg,
@@ -493,33 +471,25 @@ h1, h2, h3, h4, h5, h6 {
         ),
         rgba(20, 27, 38, 0.5);
     border: 1px solid rgba(212, 175, 55, 0.3);
-    border-radius: 8px;
+    border-radius: 12px;
 }
 
-.detail-item {
+.details-row-section .detail-box {
     display: flex;
-    gap: 15px;
     align-items: flex-start;
+    gap: 15px;
 }
 
-.detail-item .detail-icon {
-    font-size: 28px;
-    flex-shrink: 0;
-}
+/* ============================================
+   WORKSHOP TITLE
+   ============================================ */
 
-.detail-item .detail-label {
-    font-size: 11px;
-    color: var(--accent-gold);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 700;
-    margin-bottom: 3px;
-}
-
-.detail-item .detail-value {
-    font-size: 15px;
+.workshop-title {
+    font-size: 32px;
     color: var(--text-white);
-    font-weight: 600;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0;
 }
 
 /* ============================================
