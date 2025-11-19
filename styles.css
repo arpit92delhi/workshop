@@ -27,6 +27,8 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 body {
@@ -36,6 +38,8 @@ body {
     line-height: 1.7;
     font-weight: 400;
     font-size: 16px;
+    overflow-x: hidden;
+    width: 100%;
     background-image:
         repeating-linear-gradient(
             0deg,
@@ -319,6 +323,15 @@ body.light-theme .footer {
 
 @media (max-width: 768px) {
     /* Mobile: Stack hero section vertically */
+    .navbar {
+        padding: 12px 10px;
+    }
+
+    .nav-container {
+        max-width: 100%;
+        padding: 0 5px;
+    }
+
     .hero-product-section {
         grid-template-columns: 1fr;
         gap: 15px;
@@ -345,13 +358,13 @@ body.light-theme .footer {
     }
 
     .nav-right {
-        gap: 10px;
-        right: 15px;
+        gap: 8px;
+        right: 10px;
     }
 
     .theme-switcher {
         font-size: 16px;
-        padding: 5px;
+        padding: 4px;
     }
 }
 
@@ -360,16 +373,33 @@ body.light-theme .footer {
         box-sizing: border-box;
     }
 
+    .navbar {
+        padding: 10px 8px;
+    }
+
+    .nav-container {
+        max-width: 100%;
+        padding: 0 3px;
+    }
+
+    .logo-text {
+        font-size: 24px;
+    }
+
+    .logo-author {
+        font-size: 10px;
+    }
+
     .hero-product-section {
-        gap: 15px;
+        gap: 12px;
         padding: 0;
     }
 
     .details-row-section {
         grid-template-columns: 1fr;
-        padding: 10px 0;
-        gap: 10px;
-        margin-bottom: 20px;
+        padding: 8px 0;
+        gap: 8px;
+        margin-bottom: 15px;
     }
 
     .thumbnail {
@@ -394,13 +424,13 @@ body.light-theme .footer {
     }
 
     .nav-right {
-        gap: 8px;
-        right: 12px;
+        gap: 6px;
+        right: 8px;
     }
 
     .theme-switcher {
-        font-size: 15px;
-        padding: 4px;
+        font-size: 14px;
+        padding: 3px;
     }
 }
 
