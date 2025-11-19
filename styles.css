@@ -172,16 +172,16 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 4px 15px rgba(235, 85, 100, 0.4);
 }
 
-/* Workshop Info Section Responsive */
+/* Product Section Responsive */
 @media (max-width: 1200px) {
-    .workshop-info-section {
-        grid-template-columns: 0.85fr 1.15fr;
+    .product-section {
+        grid-template-columns: 1.1fr 1fr;
         gap: 50px;
     }
 }
 
 @media (max-width: 1024px) {
-    .workshop-info-section {
+    .product-section {
         grid-template-columns: 1fr 1fr;
         gap: 40px;
     }
@@ -197,35 +197,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
-    /* Mobile: Stack workshop section vertically */
-    .workshop-info-section {
+    /* Mobile: Stack product section vertically */
+    .product-section {
         grid-template-columns: 1fr;
         gap: 40px;
     }
 
-    .hero-image-section img {
-        height: 350px;
+    .thumbnail {
+        min-width: 80px;
+        height: 80px;
     }
 
-    .thumbnail-carousel {
-        gap: 15px;
+    .key-details {
+        padding: 20px;
     }
 
-    .thumbnail-slide {
-        min-width: 100px;
-        height: 100px;
+    .detail-item {
+        gap: 12px;
     }
 
-    .center-details {
-        padding: 30px;
+    .detail-item .detail-icon {
+        font-size: 24px;
     }
 
-    .detail-box {
-        gap: 15px;
-    }
-
-    .detail-icon {
-        font-size: 28px;
+    .workshop-title {
+        font-size: 24px;
     }
 
     .navbar-ctas {
@@ -252,32 +248,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 480px) {
-    .hero-image-section img {
-        height: 250px;
+    .product-section {
+        gap: 30px;
     }
 
-    .thumbnail-carousel {
-        gap: 10px;
+    .thumbnail {
+        min-width: 70px;
+        height: 70px;
     }
 
-    .carousel-btn {
-        width: 40px;
-        height: 40px;
-        font-size: 18px;
+    .workshop-title {
+        font-size: 20px;
     }
 
-    .thumbnail-slide {
-        min-width: 80px;
-        height: 80px;
+    .key-details {
+        padding: 15px;
+        gap: 15px;
     }
 
-    .workshop-header h2 {
-        font-size: 24px;
+    .pricing-options {
+        gap: 12px;
     }
 
-    .center-details {
-        padding: 20px;
-        gap: 20px;
+    .pricing-card {
+        padding: 15px;
+    }
+
+    .urgency-box {
+        padding: 12px;
     }
 }
 
@@ -352,96 +350,74 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================
-   HERO IMAGE SECTION - Full Width Large Image
+   PRODUCT SECTION - Two Column Layout
    ============================================ */
 
-.hero-image-section {
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
-    margin-bottom: 60px;
-    border-radius: 0;
+.product-section {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+    margin-bottom: 80px;
+    align-items: flex-start;
 }
 
-.hero-image-section img {
+/* ============================================
+   GALLERY COLUMN - Left Side
+   ============================================ */
+
+.gallery-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.main-gallery {
     width: 100%;
-    height: 500px;
-    object-fit: cover;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    box-shadow: var(--shadow-lg);
+}
+
+.main-gallery img {
+    width: 100%;
+    height: auto;
     display: block;
 }
 
 /* ============================================
-   THUMBNAIL GALLERY SECTION
+   THUMBNAILS - Below Main Image
    ============================================ */
 
-.thumbnail-gallery-section {
-    margin-bottom: 80px;
+.thumbnails-section {
+    width: 100%;
 }
 
-.gallery-header {
-    margin-bottom: 30px;
-}
-
-.gallery-header h3 {
-    font-size: 24px;
-    color: var(--text-white);
-    font-weight: 700;
-    margin: 0;
-}
-
-.thumbnail-carousel {
+.thumbnails-list {
     display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.carousel-btn {
-    background: rgba(212, 175, 55, 0.9);
-    color: var(--primary-dark);
-    border: none;
-    width: 50px;
-    height: 50px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 20px;
-    transition: all 0.3s ease;
-    font-weight: bold;
-    box-shadow: var(--shadow-md);
-    flex-shrink: 0;
-}
-
-.carousel-btn:hover {
-    background: var(--accent-platinum);
-    transform: scale(1.1);
-    box-shadow: var(--shadow-lg);
-}
-
-.thumbnails-container {
-    display: flex;
-    gap: 15px;
+    gap: 12px;
     overflow-x: auto;
     scroll-behavior: smooth;
-    padding: 10px 0;
-    flex: 1;
+    padding: 5px 0;
 }
 
-.thumbnails-container::-webkit-scrollbar {
+.thumbnails-list::-webkit-scrollbar {
     height: 6px;
 }
 
-.thumbnails-container::-webkit-scrollbar-track {
+.thumbnails-list::-webkit-scrollbar-track {
     background: rgba(212, 175, 55, 0.1);
     border-radius: 3px;
 }
 
-.thumbnails-container::-webkit-scrollbar-thumb {
+.thumbnails-list::-webkit-scrollbar-thumb {
     background: var(--accent-gold);
     border-radius: 3px;
 }
 
-.thumbnail-slide {
-    min-width: 120px;
-    height: 120px;
+.thumbnail {
+    min-width: 100px;
+    height: 100px;
     border-radius: 8px;
     overflow: hidden;
     border: 2px solid rgba(212, 175, 55, 0.3);
@@ -450,17 +426,17 @@ h1, h2, h3, h4, h5, h6 {
     flex-shrink: 0;
 }
 
-.thumbnail-slide:hover {
+.thumbnail:hover {
     border-color: var(--accent-gold);
     transform: scale(1.05);
 }
 
-.thumbnail-slide.active {
+.thumbnail.active {
     border-color: var(--accent-gold);
     box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
 }
 
-.thumbnail-slide img {
+.thumbnail img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -468,36 +444,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================
-   WORKSHOP INFO SECTION - Two Column
+   DETAILS COLUMN - Right Side
    ============================================ */
 
-.workshop-info-section {
-    display: grid;
-    grid-template-columns: 0.9fr 1.1fr;
-    gap: 60px;
-    margin-bottom: 80px;
-    align-items: flex-start;
-}
-
-.workshop-sidebar {
+.details-column {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.workshop-header h2 {
+.workshop-title {
     font-size: 32px;
     color: var(--text-white);
     font-weight: 700;
     line-height: 1.3;
-    margin: 0 0 30px 0;
+    margin: 0;
 }
 
-.center-details {
+/* ============================================
+   KEY DETAILS SECTION
+   ============================================ */
+
+.key-details {
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    padding: 40px;
+    gap: 20px;
+    padding: 25px;
     background:
         repeating-linear-gradient(
             45deg,
@@ -508,44 +480,87 @@ h1, h2, h3, h4, h5, h6 {
         ),
         rgba(20, 27, 38, 0.5);
     border: 1px solid rgba(212, 175, 55, 0.3);
-    border-radius: 12px;
-    box-shadow: var(--shadow-sm);
+    border-radius: 8px;
 }
 
-.detail-box {
+.detail-item {
     display: flex;
+    gap: 15px;
     align-items: flex-start;
-    gap: 20px;
 }
 
-.detail-icon {
-    font-size: 32px;
+.detail-item .detail-icon {
+    font-size: 28px;
     flex-shrink: 0;
 }
 
-.detail-content {
-    flex: 1;
-}
-
-.detail-content .detail-label {
-    display: block;
-    font-size: 12px;
+.detail-item .detail-label {
+    font-size: 11px;
     color: var(--accent-gold);
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
-    margin-bottom: 6px;
+    margin-bottom: 3px;
 }
 
-.detail-content .detail-value {
-    display: block;
-    font-size: 16px;
+.detail-item .detail-value {
+    font-size: 15px;
     color: var(--text-white);
     font-weight: 600;
 }
 
-.sidebar-spacer {
-    flex: 1;
+/* ============================================
+   PRICING OPTIONS
+   ============================================ */
+
+.pricing-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pricing-card {
+    background:
+        repeating-linear-gradient(
+            -45deg,
+            rgba(212, 175, 55, 0.05) 0px,
+            rgba(212, 175, 55, 0.05) 1px,
+            transparent 1px,
+            transparent 2px
+        ),
+        rgba(20, 27, 38, 0.5);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.pricing-card:hover {
+    border-color: var(--accent-gold);
+    background:
+        repeating-linear-gradient(
+            -45deg,
+            rgba(212, 175, 55, 0.08) 0px,
+            rgba(212, 175, 55, 0.08) 1px,
+            transparent 1px,
+            transparent 2px
+        ),
+        rgba(20, 27, 38, 0.6);
+}
+
+.pricing-card h4 {
+    font-size: 13px;
+    color: var(--text-white);
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.pricing-card .price {
+    font-size: 22px;
+    color: var(--accent-gold);
+    font-weight: 700;
+    margin-bottom: 12px;
 }
 
 /* ============================================

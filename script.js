@@ -1,25 +1,21 @@
-// Thumbnail Gallery Carousel
-const thumbnailSlides = document.querySelectorAll('.thumbnail-slide');
-const thumbnailContainer = document.querySelector('.thumbnails-container');
-const prevCarouselBtn = document.querySelector('.carousel-prev');
-const nextCarouselBtn = document.querySelector('.carousel-next');
+// Thumbnail Gallery - Click to Update Main Image
+const thumbnails = document.querySelectorAll('.thumbnail');
+const mainGalleryImage = document.getElementById('mainGalleryImage');
 
-if (prevCarouselBtn && nextCarouselBtn) {
-    prevCarouselBtn.addEventListener('click', () => {
-        thumbnailContainer.scrollLeft -= 150;
-    });
+thumbnails.forEach(thumbnail => {
+    thumbnail.addEventListener('click', () => {
+        // Get the image src from data attribute
+        const imageSrc = thumbnail.getAttribute('data-src');
 
-    nextCarouselBtn.addEventListener('click', () => {
-        thumbnailContainer.scrollLeft += 150;
-    });
-}
+        // Update main gallery image
+        mainGalleryImage.src = imageSrc;
 
-// Click to select thumbnail
-thumbnailSlides.forEach(slide => {
-    slide.addEventListener('click', () => {
-        thumbnailSlides.forEach(s => s.classList.remove('active'));
-        slide.classList.add('active');
-        slide.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        // Update active state
+        thumbnails.forEach(t => t.classList.remove('active'));
+        thumbnail.classList.add('active');
+
+        // Smooth scroll thumbnail into view
+        thumbnail.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
     });
 });
 

@@ -28,46 +28,43 @@
 
     <!-- Main Container -->
     <div class="main-wrapper">
-        <!-- HERO SECTION: Large 3D Image at Top -->
-        <section class="hero-image-section">
-            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/05a77f165932129.64101010e52e6.jpg" alt="Varanasi Photography Hero">
-        </section>
+        <!-- TWO-COLUMN PRODUCT SECTION: Left Gallery + Right Details -->
+        <section class="product-section">
+            <!-- LEFT: Image Gallery + Thumbnails -->
+            <div class="gallery-column">
+                <!-- Main Gallery Image -->
+                <div class="main-gallery">
+                    <img id="mainGalleryImage" src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/05a77f165932129.64101010e52e6.jpg" alt="Varanasi Photography">
+                </div>
 
-        <!-- THUMBNAIL GALLERY: List of Images Below Hero -->
-        <section class="thumbnail-gallery-section">
-            <div class="gallery-header">
-                <h3>Explore Our Photography</h3>
-            </div>
-            <div class="thumbnail-carousel">
-                <button class="carousel-btn carousel-prev">❮</button>
-                <div class="thumbnails-container">
-                    <div class="thumbnail-slide active" data-index="0">
-                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/05a77f165932129.64101010e52e6.jpg" alt="Gallery 1">
-                    </div>
-                    <div class="thumbnail-slide" data-index="1">
-                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/f0ae5f165932129.64101010e8271.jpg" alt="Gallery 2">
-                    </div>
-                    <div class="thumbnail-slide" data-index="2">
-                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/05a77f165932129.64101010e52e6.jpg" alt="Gallery 3">
-                    </div>
-                    <div class="thumbnail-slide" data-index="3">
-                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/f0ae5f165932129.64101010e8271.jpg" alt="Gallery 4">
-                    </div>
-                    <div class="thumbnail-slide" data-index="4">
-                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/05a77f165932129.64101010e52e6.jpg" alt="Gallery 5">
+                <!-- Thumbnail Gallery -->
+                <div class="thumbnails-section">
+                    <div class="thumbnails-list">
+                        <div class="thumbnail active" data-src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/05a77f165932129.64101010e52e6.jpg">
+                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/05a77f165932129.64101010e52e6.jpg" alt="Thumb 1">
+                        </div>
+                        <div class="thumbnail" data-src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/f0ae5f165932129.64101010e8271.jpg">
+                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/f0ae5f165932129.64101010e8271.jpg" alt="Thumb 2">
+                        </div>
+                        <div class="thumbnail" data-src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/05a77f165932129.64101010e52e6.jpg">
+                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/05a77f165932129.64101010e52e6.jpg" alt="Thumb 3">
+                        </div>
+                        <div class="thumbnail" data-src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/f0ae5f165932129.64101010e8271.jpg">
+                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/f0ae5f165932129.64101010e8271.jpg" alt="Thumb 4">
+                        </div>
+                        <div class="thumbnail" data-src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/05a77f165932129.64101010e52e6.jpg">
+                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/05a77f165932129.64101010e52e6.jpg" alt="Thumb 5">
+                        </div>
                     </div>
                 </div>
-                <button class="carousel-btn carousel-next">❯</button>
             </div>
-        </section>
 
-        <!-- TWO-COLUMN: Left Sidebar + Center Details -->
-        <section class="workshop-info-section">
-            <!-- Left Sidebar -->
-            <div class="workshop-sidebar">
-                <div class="workshop-header">
-                    <h2>Street Photography Workshop<br>with Arpit Narain Saxena</h2>
-                </div>
+            <!-- RIGHT: Product Details -->
+            <div class="details-column">
+                <!-- Workshop Title -->
+                <h1 class="workshop-title">Street Photography Workshop with Arpit Narain Saxena</h1>
+
+                <!-- Artist Card -->
                 <div class="artist-card">
                     <img src="dp.webp" alt="Arpit Narain Saxena" class="artist-img">
                     <h3>Arpit Narain Saxena</h3>
@@ -75,38 +72,57 @@
                     <p class="artist-bio">Renowned for travel & documentary photography. Specializes in composition, light, and storytelling.</p>
                     <a href="https://www.behance.net/arpit92saxdc70" target="_blank" class="btn-link">View Portfolio →</a>
                 </div>
-                <div class="sidebar-spacer"></div>
-            </div>
 
-            <!-- Center Details Section -->
-            <div class="center-details">
-                <div class="detail-box">
-                    <div class="detail-icon">⏱️</div>
-                    <div class="detail-content">
-                        <p class="detail-label">Duration</p>
-                        <p class="detail-value">2 Days / 2 Nights</p>
+                <!-- Key Details -->
+                <div class="key-details">
+                    <div class="detail-item">
+                        <span class="detail-icon">⏱️</span>
+                        <div>
+                            <p class="detail-label">Duration</p>
+                            <p class="detail-value">2 Days / 2 Nights</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-icon">📍</span>
+                        <div>
+                            <p class="detail-label">Location</p>
+                            <p class="detail-value">Varanasi, UP</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-icon">👥</span>
+                        <div>
+                            <p class="detail-label">Group Size</p>
+                            <p class="detail-value">Max 8 People</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-icon">📅</span>
+                        <div>
+                            <p class="detail-label">Dates</p>
+                            <p class="detail-value">Jan 10-11, 2026</p>
+                        </div>
                     </div>
                 </div>
-                <div class="detail-box">
-                    <div class="detail-icon">📍</div>
-                    <div class="detail-content">
-                        <p class="detail-label">Location</p>
-                        <p class="detail-value">Varanasi, UP</p>
+
+                <!-- Pricing -->
+                <div class="pricing-options">
+                    <div class="pricing-card">
+                        <h4>Shared Room</h4>
+                        <p class="price">₹7,499</p>
+                        <button class="btn-book btn-secondary">Book Now</button>
+                    </div>
+                    <div class="pricing-card">
+                        <h4>Private Room</h4>
+                        <p class="price">₹9,999</p>
+                        <button class="btn-book btn-primary">Book Now</button>
                     </div>
                 </div>
-                <div class="detail-box">
-                    <div class="detail-icon">👥</div>
-                    <div class="detail-content">
-                        <p class="detail-label">Group Size</p>
-                        <p class="detail-value">Max 8 People</p>
-                    </div>
-                </div>
-                <div class="detail-box">
-                    <div class="detail-icon">📅</div>
-                    <div class="detail-content">
-                        <p class="detail-label">Dates</p>
-                        <p class="detail-value">Jan 10-11, 2026</p>
-                    </div>
+
+                <!-- Urgency -->
+                <div class="urgency-box">
+                    <span class="urgency-icon">⚡</span>
+                    <p>Only 3 Spots Left</p>
                 </div>
             </div>
         </section>
