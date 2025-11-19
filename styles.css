@@ -322,7 +322,40 @@ body.light-theme .footer {
 }
 
 @media (max-width: 768px) {
-    /* Mobile: Stack hero section vertically */
+    /* Mobile/Tablet Text Sizing */
+    body {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 26px !important;
+        margin-bottom: 15px !important;
+    }
+
+    h2 {
+        font-size: 22px !important;
+        margin-bottom: 15px !important;
+    }
+
+    h3 {
+        font-size: 18px !important;
+        margin-bottom: 12px !important;
+    }
+
+    h4 {
+        font-size: 15px !important;
+    }
+
+    h5, h6 {
+        font-size: 14px !important;
+    }
+
+    p {
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+    }
+
+    /* Navbar */
     .navbar {
         padding: 12px 10px;
     }
@@ -332,16 +365,29 @@ body.light-theme .footer {
         padding: 0 5px;
     }
 
+    .logo-text {
+        font-size: 22px;
+    }
+
+    /* Sections */
+    .section {
+        padding: 20px 0 !important;
+        margin-bottom: 25px !important;
+    }
+
+    .section h2 {
+        font-size: 20px !important;
+    }
+
+    /* Hero & Gallery */
     .hero-product-section {
         grid-template-columns: 1fr;
         gap: 15px;
         padding: 0;
     }
 
-    .details-row-section {
-        grid-template-columns: 1fr;
-        padding: 10px 0;
-        gap: 10px;
+    .gallery-column {
+        gap: 15px;
     }
 
     .thumbnail {
@@ -349,10 +395,151 @@ body.light-theme .footer {
         height: 70px;
     }
 
+    .thumbnails-list {
+        gap: 10px;
+    }
+
+    /* Info Column */
+    .info-column {
+        gap: 18px;
+    }
+
     .workshop-title {
         font-size: 22px;
     }
 
+    .artist-card {
+        padding: 18px;
+    }
+
+    .artist-card h3 {
+        font-size: 15px;
+    }
+
+    .artist-card p {
+        font-size: 13px;
+    }
+
+    /* Details Row */
+    .details-row-section {
+        grid-template-columns: 1fr;
+        padding: 10px 0;
+        gap: 10px;
+    }
+
+    .detail-box {
+        padding: 12px;
+    }
+
+    .detail-label {
+        font-size: 12px;
+    }
+
+    .detail-value {
+        font-size: 15px;
+    }
+
+    /* Pricing */
+    .pricing-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .pricing-inclusions h3,
+    .pricing-selector h3 {
+        font-size: 18px;
+    }
+
+    .inclusions-list li {
+        font-size: 13px;
+    }
+
+    .room-option {
+        padding: 14px;
+    }
+
+    .option-title {
+        font-size: 15px;
+    }
+
+    .option-price {
+        font-size: 17px;
+    }
+
+    .policy-title {
+        font-size: 18px;
+    }
+
+    .policy-text {
+        font-size: 13px;
+    }
+
+    .exclusions-list {
+        font-size: 13px;
+    }
+
+    /* Cards & Testimonials */
+    .value-card {
+        padding: 12px;
+    }
+
+    .value-card h3 {
+        font-size: 14px;
+    }
+
+    .value-card p {
+        font-size: 12px;
+    }
+
+    .testimonial-card {
+        padding: 15px;
+    }
+
+    .testimonial-card p {
+        font-size: 13px;
+    }
+
+    /* Itinerary */
+    .day-toggle {
+        padding: 14px;
+    }
+
+    .day-toggle h3 {
+        font-size: 15px;
+    }
+
+    .activity-time {
+        font-size: 13px;
+    }
+
+    .activity-details {
+        font-size: 13px;
+    }
+
+    /* FAQ */
+    .faq-toggle {
+        padding: 14px 18px;
+        font-size: 15px;
+    }
+
+    .faq-toggle h3 {
+        font-size: 15px;
+    }
+
+    .faq-answer {
+        font-size: 13px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 25px 15px;
+    }
+
+    .footer-link {
+        font-size: 12px;
+    }
+
+    /* Nav */
     .navbar-ctas {
         display: none;
     }
@@ -373,6 +560,39 @@ body.light-theme .footer {
         box-sizing: border-box;
     }
 
+    /* ===== GLOBAL TEXT SIZING ===== */
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px !important;
+        margin-bottom: 12px !important;
+    }
+
+    h2 {
+        font-size: 20px !important;
+        margin-bottom: 12px !important;
+    }
+
+    h3 {
+        font-size: 16px !important;
+        margin-bottom: 10px !important;
+    }
+
+    h4 {
+        font-size: 14px !important;
+    }
+
+    h5, h6 {
+        font-size: 13px !important;
+    }
+
+    p, span, a {
+        font-size: 13px !important;
+    }
+
+    /* ===== NAVBAR ===== */
     .navbar {
         padding: 10px 8px;
     }
@@ -383,18 +603,71 @@ body.light-theme .footer {
     }
 
     .logo-text {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .logo-author {
-        font-size: 10px;
+        font-size: 9px;
     }
 
+    /* ===== SECTIONS ===== */
+    .section {
+        padding: 15px 0 !important;
+        margin-bottom: 20px !important;
+    }
+
+    .section h2 {
+        font-size: 18px !important;
+    }
+
+    /* ===== HERO & GALLERY ===== */
     .hero-product-section {
         gap: 12px;
         padding: 0;
     }
 
+    .gallery-column {
+        gap: 12px;
+    }
+
+    .main-gallery {
+        border-radius: 8px;
+    }
+
+    .thumbnails-list {
+        gap: 8px;
+        padding: 3px 0;
+    }
+
+    .thumbnail {
+        min-width: 50px;
+        height: 50px;
+        border-radius: 6px;
+    }
+
+    /* ===== INFO COLUMN ===== */
+    .info-column {
+        gap: 15px;
+    }
+
+    .workshop-title {
+        font-size: 18px;
+    }
+
+    .artist-card {
+        padding: 15px;
+        gap: 8px;
+    }
+
+    .artist-card h3 {
+        font-size: 14px;
+    }
+
+    .artist-card p {
+        font-size: 12px;
+    }
+
+    /* ===== DETAILS ROW ===== */
     .details-row-section {
         grid-template-columns: 1fr;
         padding: 8px 0;
@@ -402,27 +675,164 @@ body.light-theme .footer {
         margin-bottom: 15px;
     }
 
-    .thumbnail {
-        min-width: 60px;
-        height: 60px;
+    .detail-box {
+        padding: 10px;
+        gap: 6px;
     }
 
-    .workshop-title {
-        font-size: 18px;
+    .detail-label {
+        font-size: 11px;
     }
 
-    .pricing-options {
+    .detail-value {
+        font-size: 14px;
+    }
+
+    /* ===== PRICING ===== */
+    .pricing-layout {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .pricing-inclusions h3,
+    .pricing-selector h3 {
+        font-size: 16px;
+    }
+
+    .inclusions-list li {
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
+
+    .room-option {
+        padding: 12px;
         gap: 10px;
     }
 
-    .pricing-card {
+    .option-title {
+        font-size: 14px;
+    }
+
+    .option-price {
+        font-size: 16px;
+    }
+
+    .option-price.original {
+        font-size: 12px;
+    }
+
+    .discount-badge {
+        font-size: 10px;
+        padding: 3px 6px;
+    }
+
+    .btn-primary, .btn-book {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .policy-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .policy-text {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .exclusions-list {
+        font-size: 12px;
+        padding-left: 20px;
+    }
+
+    .exclusions-list li {
+        margin-bottom: 6px;
+    }
+
+    /* ===== VALUE CARDS & TESTIMONIALS ===== */
+    .value-card {
+        padding: 10px;
+        gap: 6px;
+    }
+
+    .value-card h3 {
+        font-size: 13px;
+    }
+
+    .value-card p {
+        font-size: 11px;
+    }
+
+    .testimonial-card {
         padding: 12px;
     }
 
-    .urgency-box {
-        padding: 10px;
+    .testimonial-card p {
+        font-size: 12px;
+        line-height: 1.5;
     }
 
+    .testimonial-author {
+        font-size: 12px;
+    }
+
+    /* ===== ITINERARY ===== */
+    .day-toggle {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .day-toggle h3 {
+        font-size: 14px;
+    }
+
+    .activity-time {
+        font-size: 12px;
+    }
+
+    .activity-details {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    /* ===== FAQ ===== */
+    .faq-toggle {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+
+    .faq-toggle h3 {
+        font-size: 14px;
+    }
+
+    .faq-answer {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+        padding: 20px 12px;
+        margin-top: 40px;
+    }
+
+    .footer-content {
+        gap: 12px;
+    }
+
+    .footer-link {
+        font-size: 11px;
+        padding: 4px 6px;
+    }
+
+    /* ===== FORMS ===== */
+    input, textarea, select {
+        font-size: 14px !important;
+        padding: 10px !important;
+    }
+
+    /* ===== MISC ===== */
     .nav-right {
         gap: 6px;
         right: 8px;
@@ -431,6 +841,12 @@ body.light-theme .footer {
     .theme-switcher {
         font-size: 14px;
         padding: 3px;
+    }
+
+    .whatsapp-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
     }
 }
 
