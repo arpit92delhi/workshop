@@ -364,14 +364,14 @@ body.light-theme .footer {
     }
     .section h2 { font-size: 18px !important; }
 
-    .hero-product-section { grid-template-columns: 1fr; gap: 12px; padding: 12px; box-sizing: border-box; width: 100%; max-width: 100%; overflow-x: hidden; }
-    .gallery-column { gap: 12px; width: 100%; max-width: 100%; overflow-x: hidden; }
-    .main-gallery { width: 100%; height: auto; max-height: 350px; border-radius: 8px; }
-    .main-gallery img { width: 100%; height: auto; max-height: 350px; object-fit: cover; }
-    .thumbnails-list { gap: 8px; width: 100%; max-width: 100%; }
+    .hero-product-section { grid-template-columns: 1fr !important; gap: 12px !important; padding: 12px !important; box-sizing: border-box !important; width: 100% !important; max-width: 100% !important; overflow-x: hidden !important; }
+    .gallery-column { gap: 12px !important; width: 100% !important; max-width: 100% !important; overflow-x: hidden !important; }
+    .main-gallery { width: 100% !important; height: auto !important; max-height: 350px !important; border-radius: 8px; }
+    .main-gallery img { width: 100% !important; height: auto !important; max-height: 350px !important; object-fit: cover; }
+    .thumbnails-list { gap: 8px !important; width: 100% !important; max-width: 100% !important; }
     .thumbnail { min-width: 60px; height: 60px; }
 
-    .info-column { gap: 12px; width: 100%; max-width: 100%; overflow-x: hidden; }
+    .info-column { gap: 12px !important; width: 100% !important; max-width: 100% !important; overflow-x: hidden !important; }
     .workshop-title { font-size: 18px; }
     .artist-card { padding: 12px; gap: 8px; max-height: 200px; width: 100%; max-width: 100%; }
 
@@ -436,15 +436,15 @@ body.light-theme .footer {
     }
     .section h2 { font-size: 16px !important; }
 
-    .hero-product-section { grid-template-columns: 1fr; gap: 8px; padding: 6px; box-sizing: border-box; width: 100%; max-width: 100%; overflow-x: hidden; }
-    .gallery-column { gap: 8px; width: 100%; max-width: 100%; overflow-x: hidden; }
-    .main-gallery { width: 100%; height: auto; max-height: 280px; border-radius: 6px; }
-    .main-gallery img { width: 100%; height: auto; max-height: 280px; object-fit: cover; }
-    .thumbnails-section { width: 100%; max-width: 100%; }
-    .thumbnails-list { gap: 6px; padding: 6px 0; width: 100%; max-width: 100%; overflow-x: auto; }
+    .hero-product-section { grid-template-columns: 1fr !important; gap: 8px !important; padding: 6px !important; box-sizing: border-box !important; width: 100% !important; max-width: 100% !important; overflow-x: hidden !important; display: grid !important; }
+    .gallery-column { gap: 8px !important; width: 100% !important; max-width: 100% !important; overflow-x: hidden !important; }
+    .main-gallery { width: 100% !important; height: auto !important; max-height: 280px !important; border-radius: 6px; }
+    .main-gallery img { width: 100% !important; height: auto !important; max-height: 280px !important; object-fit: cover; }
+    .thumbnails-section { width: 100% !important; max-width: 100% !important; }
+    .thumbnails-list { gap: 6px !important; padding: 6px 0 !important; width: 100% !important; max-width: 100% !important; overflow-x: auto !important; }
     .thumbnail { min-width: 45px; width: 45px; height: 45px; flex-shrink: 0; }
 
-    .info-column { gap: 10px; width: 100%; max-width: 100%; overflow-x: hidden; }
+    .info-column { gap: 10px !important; width: 100% !important; max-width: 100% !important; overflow-x: hidden !important; }
     .workshop-title { font-size: 16px; }
     .artist-card { padding: 10px; gap: 6px; width: 100%; max-width: 100%; }
 
