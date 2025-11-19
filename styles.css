@@ -321,65 +321,14 @@ body.light-theme .footer {
     /* Mobile: Stack hero section vertically */
     .hero-product-section {
         grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .details-row-section {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 20px;
-    }
-
-    .thumbnail {
-        min-width: 80px;
-        height: 80px;
-    }
-
-    .workshop-title {
-        font-size: 24px;
-    }
-
-    .navbar-ctas {
-        display: flex;
-        gap: 8px;
-    }
-
-    .navbar-btn {
-        padding: 8px 10px;
-        font-size: 10px;
-    }
-
-    .navbar-btn.whatsapp-quick {
-        background: #25d366;
-        border: none;
-        padding: 8px 12px;
-    }
-
-    .navbar-btn.book-quick {
-        background: var(--accent-red);
-        border: none;
-        padding: 8px 12px;
-    }
-
-    .nav-right {
-        gap: 12px;
-        right: 20px;
-    }
-
-    .theme-switcher {
-        font-size: 18px;
-        padding: 6px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-product-section {
-        gap: 30px;
+        gap: 15px;
+        padding: 0;
     }
 
     .details-row-section {
         grid-template-columns: 1fr;
-        padding: 15px;
-        margin-bottom: 60px;
+        padding: 10px 0;
+        gap: 10px;
     }
 
     .thumbnail {
@@ -388,19 +337,11 @@ body.light-theme .footer {
     }
 
     .workshop-title {
-        font-size: 20px;
+        font-size: 22px;
     }
 
-    .pricing-options {
-        gap: 12px;
-    }
-
-    .pricing-card {
-        padding: 15px;
-    }
-
-    .urgency-box {
-        padding: 12px;
+    .navbar-ctas {
+        display: none;
     }
 
     .nav-right {
@@ -411,6 +352,55 @@ body.light-theme .footer {
     .theme-switcher {
         font-size: 16px;
         padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    .hero-product-section {
+        gap: 15px;
+        padding: 0;
+    }
+
+    .details-row-section {
+        grid-template-columns: 1fr;
+        padding: 10px 0;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .thumbnail {
+        min-width: 60px;
+        height: 60px;
+    }
+
+    .workshop-title {
+        font-size: 18px;
+    }
+
+    .pricing-options {
+        gap: 10px;
+    }
+
+    .pricing-card {
+        padding: 12px;
+    }
+
+    .urgency-box {
+        padding: 10px;
+    }
+
+    .nav-right {
+        gap: 8px;
+        right: 12px;
+    }
+
+    .theme-switcher {
+        font-size: 15px;
+        padding: 4px;
     }
 }
 
@@ -2406,11 +2396,11 @@ body.light-theme .footer {
 
 @media (max-width: 768px) {
     .navbar {
-        padding: 15px 20px;
+        padding: 12px 15px;
     }
 
     .nav-container {
-        padding: 0 10px;
+        padding: 0 5px;
     }
 
     .logo {
@@ -2422,9 +2412,11 @@ body.light-theme .footer {
     }
 
     .main-wrapper {
-        max-width: 95%;
-        padding: 20px 15px;
-        grid-template-columns: 1fr;
+        max-width: 100%;
+        width: 100%;
+        padding: 15px 12px;
+        margin: 0;
+        gap: 25px;
     }
 
     .form-row {
@@ -2436,15 +2428,22 @@ body.light-theme .footer {
     }
 
     .info-cards {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        gap: 12px;
     }
 
     .gallery-carousel {
         height: 350px;
     }
 
+    .section {
+        padding: 20px 0;
+        margin-bottom: 30px;
+    }
+
     .section h2 {
-        font-size: 24px;
+        font-size: 22px;
+        margin-bottom: 15px;
     }
 
     .photographer-profile {
@@ -2452,8 +2451,24 @@ body.light-theme .footer {
     }
 
     .photographer-image {
-        margin-bottom: 25px;
+        margin-bottom: 20px;
         width: 100%;
+    }
+
+    .hero-product-section {
+        gap: 15px;
+        padding: 0;
+    }
+
+    .pricing-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .details-row-section {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 10px 0;
     }
 }
 
@@ -2503,29 +2518,35 @@ body.light-theme .footer {
 
 @media (max-width: 480px) {
     .main-wrapper {
-        padding: 15px 12px;
-    }
-
-    .footer-content {
+        max-width: 100%;
+        width: 100%;
+        padding: 15px 10px;
+        margin: 0;
         gap: 20px;
     }
 
+    .footer-content {
+        gap: 15px;
+    }
+
     .footer-link {
-        font-size: 13px;
-        padding: 6px 8px;
+        font-size: 12px;
+        padding: 5px 6px;
     }
 
     .section {
-        padding: 25px 0;
-        margin-bottom: 40px;
+        padding: 20px 0;
+        margin-bottom: 30px;
     }
 
     .section h2 {
         font-size: 20px;
+        margin-bottom: 20px;
     }
 
     .info-cards {
         grid-template-columns: 1fr;
+        gap: 12px;
     }
 
     .gallery-carousel {
@@ -2533,7 +2554,49 @@ body.light-theme .footer {
     }
 
     .booking-form-wrapper {
-        padding: 25px;
+        padding: 20px;
+    }
+
+    .hero-product-section {
+        gap: 15px;
+        padding: 0;
+    }
+
+    .pricing-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .pricing-inclusions,
+    .pricing-selector {
+        padding: 0;
+    }
+
+    .details-row-section {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .detail-box {
+        padding: 12px;
+    }
+
+    .value-card {
+        padding: 10px;
+        gap: 6px;
+    }
+
+    .value-card h3 {
+        font-size: 13px;
+    }
+
+    .value-card p {
+        font-size: 11px;
+    }
+
+    .testimonial-card {
+        padding: 15px;
     }
 
     .whatsapp-btn {
